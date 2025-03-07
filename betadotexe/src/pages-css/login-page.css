@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spline Sans", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.left-panel {
+    width: 30%;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: 1px;
+    position: relative;
+    width: 30%;
+    min-width: 300px; /* Prevents it from getting too small */
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button {
+    padding-left: 10px;
+    width: 50px;
+    height: 50px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+
+.right-panel {
+    width: 70%;
+    background: #1e2b5a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Automatically takes remaining space */
+    background: #1e2b5a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.up {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 2px;
+}
+
+.down {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group input {
+    width: 50%;
+}
+
+.register-button {
+    width: 100%;
+    background: white;
+    color: #1e2b5a;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.google-register {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.google-register img {
+    width: 40px;
+    height: 40px;
+}
+
+.divider {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: white;
+    margin: 0 10px;
+}
