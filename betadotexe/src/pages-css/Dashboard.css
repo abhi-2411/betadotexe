@@ -10,9 +10,15 @@ body {
 
 .bottom-links a {
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 5px 0;
+}
+.bottom-links list {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 0px 0;
 }
 
 .main-content {
@@ -94,6 +100,7 @@ header {
   font-size: 100%;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: radial-gradient(#000, #fff);
   padding: 0;
   white-space: nowrap;
   padding: 10px 15px;
@@ -106,9 +113,6 @@ header {
 }
 .login-button svg {
   display: block;
-}
-.login-button {
-  display: none;
 }
 .login-button {
   --neon: #0ea5e9;

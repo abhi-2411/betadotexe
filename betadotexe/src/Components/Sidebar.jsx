@@ -30,7 +30,7 @@ const Sidebar = () => {
           </NavLink>
         </ul>
       </div>
-      <div className="bottom-links">
+      <div className="bottom-links list">
         <a href="#">Logout</a>
         <a href="#">Settings</a>
       </div>
