@@ -1,32 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "../components-css/Sidebar.css";
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar element-box-shadow">
       <h2>beta.exe</h2>
       <div className="list">
         <ul>
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-            <li className="active search-button">Dashboard</li>
-          </Link>
-          <Link
+          <NavLink to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <li className="search-button">Dashboard</li>
+          </NavLink>
+          <NavLink
             to="/tests"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            <li className="search-button">Tests</li>
-          </Link>
-          <Link
+            <li className="search-buttonf">Tests</li>
+          </NavLink>
+          <NavLink
             to="/leaderboard"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <li className="search-button">Leaderboard</li>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/reports"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <li className="search-button">Reports</li>
-          </Link>
+          </NavLink>
         </ul>
       </div>
       <div className="bottom-links">

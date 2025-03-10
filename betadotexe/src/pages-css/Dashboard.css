@@ -2,7 +2,7 @@ body {
     font-family: "Helvetica", sans-serif;
     display: flex;
     margin: 0;
-    background-color: #2E4873;
+    background-color: black;
     color: white;
 }
 
@@ -70,4 +70,121 @@ header {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+}
+
+.login-button,
+.login-button *,
+.login-button :after,
+.login-button :before,
+.login-button:after,
+.login-button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.login-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #4A6FA5;
+  background-image: none;
+  color: white;
+  cursor: pointer;
+  font-size: 100%;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  white-space: nowrap;
+  padding: 10px 15px;
+}
+.login-button:disabled {
+  cursor: default;
+}
+.login-button:-moz-focusring {
+  outline: auto;
+}
+.login-button svg {
+  display: block;
+  vertical-align: middle;
+}
+.login-button {
+  display: none;
+}
+.login-button {
+  --neon: #0ea5e9;
+  --neon: white;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  outline-offset: -4px;
+  overflow: hidden;
+  /* padding: 1.2rem 3rem; */
+  position: relative;
+  box-shadow: none;
+  /* transition: 0.2s linear 0.1s; */
+  border-radius: 10px;
+}
+.login-button:hover {
+  /* box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon); */
+
+  outline: 3px solid #4A6FA5;
+  scale: 1.05;
+  transition: 0.1s linear 0.1s; 
+  border-radius: 10px;
+  box-shadow: none;
+}
+.login-button:active {
+    /* box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+      0 0 100px var(--neon); */
+    scale: 0.9;
+    transition: 0.1s linear 0.1s; 
+    border-radius: 100px;
+  }
+.login-button span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.login-button .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.login-button:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.login-button .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.login-button:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.login-button .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.login-button:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.login-button .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.login-button:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
 }
