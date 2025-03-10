@@ -1,0 +1,71 @@
+/* src/components/Tests.css */
+
+.tests-container {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Make the container fill the viewport height */
+  }
+  
+  .sidebar {
+    background-color: #2E52A2; /* Dark blue background */
+    color: white;
+    width: 250px;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    flex-grow: 1; /* Allow content to take up remaining space */
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-button {
+    background-color: #E8F0FE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #E8F0FE;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
