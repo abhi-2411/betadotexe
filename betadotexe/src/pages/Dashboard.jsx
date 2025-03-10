@@ -7,7 +7,7 @@ const Dashboard = () => {
       <header>
         <h1>Hi Nitheesh!</h1>
         <div className="header-icons">
-          <button>Login</button>
+          <button className="login-button">Login</button>
           <span>🔍</span>
           <span>🔔</span>
           <div className="profile-pic"></div>
@@ -15,7 +15,7 @@ const Dashboard = () => {
       </header>
 
       <div className="dashboard-grid">
-        <div className="card profile">
+        <div className="card profile element-box-shadow">
           <h3>Profile</h3>
           <p>Name</p>
           <p>Department</p>
@@ -23,7 +23,7 @@ const Dashboard = () => {
           <div className="profile-placeholder"></div>
         </div>
 
-        <div className="card test-status">
+        <div className="card test-status element-box-shadow">
           <h3>Test Status</h3>
           <p>
             <strong>43</strong> Total Tests | <strong>12</strong> Completed
@@ -35,18 +35,18 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="card time-spent">
+        <div className="card time-spent element-box-shadow">
           <h3>Time Spent on Tests</h3>
           <p>
             <strong>54</strong> minutes
           </p>
         </div>
 
-        <div className="card to-be-added">
+        <div className="card to-be-added element-box-shadow">
           <h3>To be Added</h3>
         </div>
 
-        <div className="card test-performance">
+        <div className="card test-performance element-box-shadow">
           <h3>Test Performance</h3>
           <p>Performance over the last 5 tests</p>
           <div className="performance-chart"></div>
