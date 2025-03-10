@@ -1,0 +1,8 @@
+.sex-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+}

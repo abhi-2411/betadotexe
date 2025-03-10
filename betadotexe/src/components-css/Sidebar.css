@@ -1,0 +1,184 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 40px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sidebar li:hover {
+    background-color: #f0f0f0;
+}
+
+.list {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+.search-button,
+.search-button *,
+.search-button :after,
+.search-button :before,
+.search-button:after,
+.search-button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.search-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: white;
+  background-image: none;
+  color: black;
+  cursor: pointer;
+  font-size: 100%;
+
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  white-space: nowrap;
+  padding: 10px 15px;
+}
+.search-button:disabled {
+  cursor: default;
+}
+.search-button:-moz-focusring {
+  outline: auto;
+}
+.search-button svg {
+  display: block;
+  vertical-align: middle;
+}
+.search-button {
+  display: none;
+}
+.search-button {
+  --neon: #0ea5e9;
+  --neon: white;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  box-shadow: none;
+  /* transition: 0.2s linear 0.1s; */
+}
+.search-button:hover {
+  /* box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon); */
+  color: #000;
+  outline: 3px solid #4A6FA5;
+  scale: 1.05;
+  transition: 0.1s linear 0.1s; 
+  border-radius: 10px;
+  box-shadow: none;
+}
+.search-button:active {
+    /* box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+      0 0 100px var(--neon); */
+    color: #000;
+    outline: 3px solid black;
+    scale: 0.9;
+    transition: 0.1s linear 0.1s; 
+    border-radius: 100px;
+  }
+.search-button span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.search-button .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.search-button:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.search-button .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.search-button:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.search-button .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.search-button:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.search-button .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.search-button:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
+.active {
+  background-color: #4A6FA5;
+  border-radius: 10px;
+  color: white;
+}
+
+li {
+  padding: px;
+}

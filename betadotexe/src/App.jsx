@@ -1,5 +1,20 @@
 import "./App.css";
-import LoginPage from "./pages/login-page";
+import Sidebar from "./Components/Sidebar";
+import Dashboard from "./pages/Dashboard";
+import Tests from "./pages/Tests";
+import Leaderboard from "./pages/Leaderboard";
+import { Routes, Route } from "react-router-dom";
 export default function App() {
-  return <LoginPage />;
+  return (
+    <div className="sex-container">
+      <Sidebar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/tests" element={<Tests />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
