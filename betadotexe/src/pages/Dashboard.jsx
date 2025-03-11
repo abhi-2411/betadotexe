@@ -1,6 +1,8 @@
 import React from "react";
+
 import "../pages-css/dashboard.css";
 import "../components-css/Sidebar.css";
+import { NavLink } from "react-router-dom";
 const Dashboard = () => {
   return (
     <div className="main-content">
@@ -10,16 +12,20 @@ const Dashboard = () => {
           <button className="login-button">Login</button>
           <span>🔍</span>
           <span>🔔</span>
-          <div className="profile-pic"></div>
+          <NavLink to="/profile">
+            <div className="profile-pic"></div>
+          </NavLink>
         </div>
       </header>
 
       <div className="dashboard-grid">
         <div className="card profile element-box-shadow">
-          <h3>Profile</h3>
-          <p>Name</p>
-          <p>Department</p>
-          <p>Course</p>
+          <NavLink to="/profile">
+            <h3>Profile</h3>
+          </NavLink>
+          <p>Name: </p>
+          <p>Department: </p>
+          <p>Course:</p>
           <div className="profile-placeholder"></div>
         </div>
 

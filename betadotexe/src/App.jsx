@@ -3,6 +3,7 @@ import Sidebar from "./Components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Tests from "./pages/Tests";
 import Leaderboard from "./pages/Leaderboard";
+import Profile from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/tests" element={<Tests />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </div>
