@@ -1,0 +1,25 @@
+.subject-nav-container {
+    padding: 20px;
+  }
+  
+  .subject-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .units-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .unit-box {
+    background-color: #E8F0FE;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px; /* Set a fixed width for the boxes */
+  }
